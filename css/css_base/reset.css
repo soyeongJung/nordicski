@@ -1,0 +1,90 @@
+/* reset.css */
+/* variable: color, size, font 규정 가이드라인 */
+/* 
+* color: * 명도대비 기준으로 제작
+       - primary(기본) : #f09
+       - main :  #faa (기본보다 밝은색)
+       - point : 
+       - font1 : #333 (약간 그레이 톤)
+       - font2 : #777
+       - font3 : #fff
+       - link :  #f09
+       - sub1 : 
+       - sub2 : 
+       - white : #fdfdfd
+       - gray1 : #333
+       - gray2 : #777
+       - black : #171717
+
+* size: * 접근성 크기의 내용을 기준
+        * 인쇄의 경우는 기준의 폰트크기는 : 9pt, 웹의 경우는 : 12pt  => 영문, 그래픽 이미지일경우 
+       - primary : 16px; == 1rem;
+       - h1(bold) : 32px; == 2rem;}
+       - h2(bold) : 29px; ==  1.8125rem;}
+       - h3(bold) : 28px; ==  1.75rem;}
+       - h4(bold) : 24px; ==  1.5rem;}
+       - h5(bold) : 22px; ==  1.375rem;}
+       - h6(bold) : 20px; ==  1.25rem;}
+       - big1 : 30pt ==>  2.5rem
+       - big2 : 27pt ==>  2.25rem
+       - normal : 12 pt
+
+* font: 
+       - english : "apple gothic", "myriad pro", arial
+       - koreas  : gothic, nanumGothic, dotum
+       - basic   : sans-serif(고딕체)
+
+* border:
+       - thin : border: 1px; solid #333
+       - nomal : border: 2px; solid #777
+       - bold : border: 5px; solid #f09
+
+* responsive:
+       - mobileV : 세로
+       - mobileH : 가로
+       - tableV : 세로(타블렛pc)
+       - tableH : 가로
+       - pc : 
+       - pcfull :
+*/
+
+/* :root{} */
+/* 최상의 기준치 /근원 을 건들일수 있다. */
+
+/* base */
+html, body{margin:0; padding:0;
+  color:#333; font-size:16px; font-size:1rem;}
+h1,h2,h3,h4,h5,h6,
+p,pre,div,
+ul,ol,li,dl,dt,dd,
+table, thead,tbody, tfoot, tr,th,td,
+form, fieldset, legend, input, textarea, select, button,
+a, img{
+    margin:0; padding:0; border:0; outline:0;
+    color:inherit;
+    font-size:inherit;
+    font-family: "apple gothic", "myriad pro", arial, gothic, nanumGothic, dotum, sans-serif;
+    /* inherit; 부모의 성격을 따라해라 */
+}
+
+address, em, wbr, strong, ins, del, abbr{font-style:normal; font-weight:normal;}
+/* wbr :  */
+
+h1{font-size: 32px; font-size:2rem;}
+h2{font-size: 29px; font-size:1.8125rem;}
+h3{font-size: 28px; font-size:1.75rem;}
+h4{font-size: 24px; font-size:1.5rem;}
+h5{font-size: 22px; font-size:1.375rem;}
+h6{font-size: 20px; font-size:1.25rem;}
+
+ul,ol,li{list-style:none;}
+a{text-decoration:none; color:#777;}
+a:hover, a:active{text-decoration:underline; color:#f09;}
+
+button{cursor:pointer;}
+
+/* =================================================================== */
+header, nav, article, section, footer, aside, main, figure, figcaption{
+    display:block; color:inherit;
+}
+
