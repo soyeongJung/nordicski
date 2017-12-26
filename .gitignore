@@ -1,0 +1,16 @@
+# 그래픽파일 전송 금지
+**/*.psd
+**/*.ai
+**/*.eps
+
+#node_modules폴더
+**/node_modules
+
+#그래픽파일 중 마크다운파일은 제외한다.
+graphic/**/*.*
+!graphic/guide.md
+
+
+
+#DS_Store
+**/.DS_Store
