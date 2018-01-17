@@ -100,6 +100,152 @@
   });
 
 
+// #historyBox .scroll_arrow 내용 숨기기
+  var titleBox = $('.sm_title_box');
+  // var title = titleBox.children('.title');
+  var hideArrow = titleBox.children('.scroll_arrow');
+  var hideBtn = hideArrow.children('button');
+
+   var btnChange = hideBtn.on('click',function(e){
+    e.preventDefault();
+    $('#yearsBox').slideToggle();
+   var _thisI = $(this).find('i');
+   var classIf = _thisI.hasClass('fa-sort-asc');
+  
+    if(classIf){
+      _thisI.attr({'class':"fa fa-sort-desc"});
+      _thisI.css({marginTop: '-1.5rem'});
+    }else{
+      _thisI.attr({'class':"fa fa-sort-asc"})
+            .css({marginTop:0});
+    }
+  });
+
+   var btnChange = hideBtn.on('click',function(e){
+    e.preventDefault();
+    $('#noticeContent').slideToggle();
+   var _thisI = $(this).find('i');
+   var classIf = _thisI.hasClass('fa-sort-asc');
+  
+    if(classIf){
+      _thisI.attr({'class':"fa fa-sort-desc"});
+      _thisI.css({marginTop: '-1.5rem'});
+    }else{
+      _thisI.attr({'class':"fa fa-sort-asc"})
+            .css({marginTop:0});
+    }
+  });
+
+     var btnChange = hideBtn.on('click',function(e){
+    e.preventDefault();
+    $('#photoBox').slideToggle();
+   var _thisI = $(this).find('i');
+   var classIf = _thisI.hasClass('fa-sort-asc');
+  
+    if(classIf){
+      _thisI.attr({'class':"fa fa-sort-desc"});
+      _thisI.css({marginTop: '-1.5rem'});
+    }else{
+      _thisI.attr({'class':"fa fa-sort-asc"})
+            .css({marginTop:0});
+    }
+  });
+//  var btnHide = [
+//           {btn:'sm_title_box', box:'#yearsBox'},
+//           {btn:'sm_title_box', box:'#noticeContent'},
+//           {btn:'sm_title_box', box:'#photoBox'},
+//            ];
+
+//   var i=0;
+//   var indexOrder = btnHide.index();
+
+
+
+// $.each(index, value){ 
+//   btnHide[i].btn.on('click',function(e) {
+//     e.preventDefault();
+//     btnHide[i].box.slideToggle();
+//   });
+// }
+
+
+
+
+
+
+
+// #skiinfoBox
+  var baseUrl = "../../media/";
+  var videoList = [
+                    {title:'pyeongChang_2018', 
+                    videoTitle:'2018년 평창 동계올림픽 장애인 경기 홍보 영상'},
+                    {title:'biathlon _pursuit',
+                    videoTitle:'바이슬론 경기 설명 영상'},
+                    {title:'crosscountry', 
+                    videoTitle:'크로스 컨트리 경기 설명 영상'}
+                  ];
+
+  var videoListLength = videoList.length;
+
+  // video에 첫번째 영상 담기
+  var video = $('.skimedia_player').find('video');
+
+  var i = 0;
+
+  var playList = function(i){
+
+    var playOrther = videoList[i];
+    var playTitle = playOrther.title;
+    var playStart = baseUrl + playTitle + '.mp4';
+
+    return playStart;
+  }; // playList;
+
+  // video.append('<source src="' + playList(i) + '" type=video/mp4" />');
+  video.prepend('<source />')
+  var videoSrc = video.find('source');
+  videoSrc.attr({'src' :playList(i), 'type': 'video/mp4'});
+
+  var videoBtn = $('.play_btn');
+  var pauseBtn = $('.stop_btn');
+
+   videoBtn.on('click', function(e){
+      e.preventDefault();
+        video[0].play();
+        videoBtn.removeClass('view');
+        pauseBtn.addClass('view');
+    });
+
+   pauseBtn.on('click', function(e){
+      e.preventDefault();
+        video[0].pause();
+        pauseBtn.removeClass('view');
+        videoBtn.addClass('view');
+    });
+
+// #rulengroupBox
+  var rule = $('.rulengroupBox').find('dl');
+  var ruleBtn = rule.children('dt');
+  ruleBtn.on('click', function(e) {
+    e.preventDefault();
+
+    var _this = $(this);
+    
+    
+
+    var hasActive = _this.hasClass('activeOther');
+    if(hasActive){
+      _this.removeClass('activeOther');
+      _this.addClass('active');
+      _this.siblings('dt').removeClass('active');
+      _this.siblings('dt').addClass('activeOther');
+    } else{
+      _this.addClass('active');
+      _this.siblings('dt').addClass('activeOther');
+    }
+  });
+
+
 // #skiinfoBox
   var skiimgBox = $('#skiimgBox');
   var skiimgBoxLi = skiimgBox.children('li');
@@ -116,6 +262,7 @@
     skiContentBoxLi.removeClass('select');
     skiContentBoxLi.eq(skiimageIndex).addClass('select');
   });
+
     
      })(this.jQuery);
     
