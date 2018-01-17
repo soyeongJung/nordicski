@@ -1,0 +1,140 @@
+/* reset.css */
+/* variable: color, size, font 규정 가이드라인 */
+/* 
+* color: * 명도대비 기준으로 제작
+       - primary(기본) : #f09
+       - main :  #faa (기본보다 밝은색)
+       - point : 
+       - font1 : #333 (약간 그레이 톤)
+       - font2 : #777
+       - font3 : #fff
+       - link :  #f09
+       - sub1 : 
+       - sub2 : 
+       - white : #fdfdfd
+       - gray1 : #333
+       - gray2 : #777
+       - black : #171717
+
+* size: * 접근성 크기의 내용을 기준
+        * 인쇄의 경우는 기준의 폰트크기는 : 9pt, 웹의 경우는 : 12pt  => 영문, 그래픽 이미지일경우 
+       - primary : 16px; == 1rem;
+       - h1(bold) : 32px; == 2rem;}
+       - h2(bold) : 29px; ==  1.8125rem;}
+       - h3(bold) : 28px; ==  1.75rem;}
+       - h4(bold) : 24px; ==  1.5rem;}
+       - h5(bold) : 22px; ==  1.375rem;}
+       - h6(bold) : 20px; ==  1.25rem;}
+       - big1 : 30pt ==>  2.5rem
+       - big2 : 27pt ==>  2.25rem
+       - normal : 12 pt
+
+* font: 
+       - english : Roboto, "myriad pro", arial
+       - koreas  : 'Nanum Gothic Coding', gothic, nanumGothic, dotum
+       - basic   : monospace, sans-serif(고딕체)
+       monospace: 형식 계통
+
+* border:
+       - thin : border: 1px; solid #333
+       - nomal : border: 2px; solid #777
+       - bold : border: 5px; solid #f09
+
+* responsive:
+       - mobileV : 세로
+       - mobileH : 가로
+       - tableV : 세로(타블렛pc)
+       - tableH : 가로
+       - pc : 
+       - pcfull :
+*/
+
+/* :root{} */
+/* 최상의 기준치 /근원 을 건들일수 있다. */
+
+/* base */
+html, body{width: 100%; height: 100%; margin:0; padding:0;
+  color:#333; font-size:16px; font-size:1rem;
+font-family: 'NanumGothicCoding', Roboto, "myriad pro", arial, gothic, nanumGothic, dotum, monospace, sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;}
+
+h1,h2,h3,h4,h5,h6,
+p,pre,div,
+ul,ol,li,dl,dt,dd,
+table, thead,tbody, tfoot, tr,th,td,
+form, fieldset, legend, input, textarea, select, button,
+a, img, figcaption, figure{
+    margin:0; padding:0; border:0; outline:0;
+    color:inherit;
+    font-size:inherit;
+    font-family: inherit;
+    /*font-family: "apple gothic", "myriad pro", arial, gothic, nanumGothic, dotum, sans-serif;*/
+    /* inherit; 부모의 성격을 따라해라 */
+}
+
+hr{margin:0; padding:0; border-bottom:1px solid #333;}
+
+address, em, wbr, strong, ins, del, abbr{font-style:normal; font-weight:normal;}
+/* wbr :  */
+
+h1{font-size: 32px; font-size:2rem;}
+h2{font-size: 30px; font-size:1.8125rem;}
+h3{font-size: 26px; font-size:1.75rem;}
+h4{font-size: 20px; font-size:1.5rem;}
+h5{font-size: 18px; font-size:1.375rem;}
+h6{font-size: 16px; font-size:1.25rem;}
+
+ul,ol,li{list-style:none;
+/*-webkit-appearance:button;
+-moz-appearance:button;
+appearance:button;*/ }
+/* ul, ol, li 형식을 button형식 속성으로 바꾼다. 정식버전 아님 caret(^):; 잘못된것을 체크 하는것 checkbox: 체크 할수 있게 보이게 하는기능 실제로 체크는 안됨.; */
+a{text-decoration:none; color:#777;}
+a:hover, a:active{text-decoration:underline; color:#f09;}
+
+code{padding:6px; border:1px solid #777; background-color:#7af;}
+kbd{font-size:1.2em; font-weight:bold; background-color:#333; border-radius:0.3rem;}
+/* code : 코드형태 (백 키로 마크다운에서 변경하여 코드 형태를 주는것) */
+/* kbd : 키보드 */
+
+
+/* form */
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+input[type="year"],
+input[type="week"],
+input[type="url"],
+textarea{cursor:pointer; box-sizing:border-box; border:1px solid #777; border-radius:0; background-color:#fff; text-indent: 5px;}
+
+input::-webkit-input-placeholder,
+input::-moz-input-placeholder,
+input:-ms-input-placeholder,
+input:-moz-input-placeholder,
+input:placeholder{ color:#09a; }
+
+select{-webkit-appearance:listBox;
+        -moz-appearance:listBox;
+        -ms-appearance:listBox;
+         appearance:listBox;}
+
+input[type="submit"],
+input[type="reset"],
+input[type="image"],
+input[type="file"],
+input[type="button"],
+button, select {cursor:pointer; border-radius:0;margin:0; padding:0; border:0; outline:0;}
+
+
+/* html5 =================================================================== */
+header, nav, article, section, footer, aside, main, figure, figcaption, picture{
+    display:block; color:inherit;
+}
+
