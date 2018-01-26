@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- ski_01.html -->
 <html lang="ko-KR">
 <head>
     <meta charset="UTF-8">
@@ -20,14 +21,14 @@
     <link rel="alle-tioch-icon" href="../favicon,png">
     <link rel="shortcut icon" href="../fasicon.png" type="image/x-icon">
 
-    <title>ski_index</title>
+    <title>대한 장애인 노르딕 스키연맹</title>
 </head>
 <body>
     <div id="wrap">
-        <div id="indexBox" class="site">
+      <div id="indexBox" class="site">
         <!-- #headBox -->
         <header id="headBox">
-            <div id="headScroll"> <!-- headBox 스크롤 -->
+            <div id="headScroll"> <!-- #headScroll 스크롤 -->
                 <h1><a href="#"><span class="hidden">대한 장애인 노르딕 스키연맹을 위한 사이트 입니다.</span></a></h1>
                 <nav id="gnb">
                     <h2 class="hidden">global navigation bar</h2>
@@ -39,7 +40,7 @@
                 </nav>
             </div> <!-- // #headScroll -->
         </header>
-        <!-- // #header -->
+        <!-- // #headBox -->
 
         <!-- #bannerBox -->
         <section id="bannerBox"> 
@@ -62,15 +63,15 @@
             </div> <!-- // .btn -->
 
             <ul class="list_box">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li class="last"><a href="#"></a></li>
+                <li><a href="#"><span class="hidden">indicator 일번</span></a></li>
+                <li><a href="#"><span class="hidden">indicator 이번</span></a></li>
+                <li class="last"><a href="#"><span class="hidden">indicator 삼번</span></a></li>
             </ul>
             <div class="scroll_btn">
                 <button type="button" 
                 class="scroll_down">
                 <span class="scroll_text">scroll</span>
-                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i><span class="hidden">연혁 페이지로 스크롤 이동</span>
                 </button>
             </div>
         </section>
@@ -82,25 +83,32 @@
             <h2 class="hidden">indicator</h2>
             <nav id="indicatorBox">
                 <ul class="indicator_list_box">
-                    <li class="indicator_01"><button type="button"></button></li>
-                    <li class="indicator_02"><button type="button"></button></li>
-                    <li class="indicator_03"><button type="button"></button></li>
-                    <li class="indicator_04"><button type="button"></button></li>
-                    <li class="indicator_05"><button type="button"></button></li>
+                    <li class="indicator_01"><button type="button"><span class="hidden">indicator 배너 페이지 이동</span></button></li>
+                    <li class="indicator_02"><button type="button"><span class="hidden">indicator 연혁, 규약 및 연맹 정보 페이지 이동</span></button></li>
+                    <li class="indicator_03"><button type="button"><span class="hidden">indicator 스키 정보 페이지 이동</span></button></li>
+                    <li class="indicator_04"><button type="button"><span class="hidden">indicator 공지사항 페이지 이동</span></button></li>
+                    <li class="indicator_05"><button type="button"><span class="hidden">indicator 미디어 페이지 이동</span></button></li>
                 </ul>
             </nav>
 
-            <div class="btn_top"><a href="#" aria-role="button">TOP</a></div>
+            <div class="btn_top"><a href="#" aria-role="button">top</a></div>
 
             <!-- #historyBox -->
             <div id="historyBox">
               <h2 class="hidden">연맹소개</h2>
               <div class="sm_title_box clearfix">
-                <div class="title"><h3><span class="hidden">2012년 ~ 2016년도별</span>연혁</h3></div>
-                <div class="scroll_arrow"><button type="button">
-                  <i class="fa fa-sort-asc" aria-hidden="true"></i></button>
+                <div class="title">
+                  <h3>
+                    <span class="hidden">2012년 부터 2016년도별 까지</span>연혁
+                  </h3>
                 </div>
-                <div class="line"></div>
+                <div class="scroll_arrow">
+                  <button type="button" class="year_btn">
+                    <i class="fa fa-sort-asc" aria-hidden="true"></i>
+                    <span class="hidden">연혁 내용 숨김 및 보이기 버튼</span>
+                  </button>
+                </div>
+                <span class="line"></span>
               </div>
               <ul id="yearsBox">
                 <li class="y_2016 clearfix">
@@ -164,6 +172,7 @@
                     <dt class="rule_box">
                       <button type="button">
                         <i class="icon_01"></i>
+                        <span class="hidden">규약 아이콘</span>
                         <span>규약</span>
                       </button>
                     </dt>
@@ -611,6 +620,7 @@
                     <dt class="group_box">
                       <button type="button">
                         <i class="icon_02"></i>
+                        <span class="hidden">연맹 아이콘</span>
                         <span>연맹</span>
                       </button>
                     </dt>
@@ -644,48 +654,52 @@
             <h3 class="hidden">크로스컨트리 및 바이애슬론 이미지</h3>
             <div class="ski_info_box">
                 <ul id="skiimgBox" class="clearfix">
-                    <li class="crossski_img select"></li>
-                    <li class="baislonski_img"></li>
+                    <li class="crossski_img select">
+                      <button>
+                        <i class=icon_03></i>
+                        <span>크로스컨트리 스키</span>
+                      </button>
+                    </li>
+                    <li class="baislonski_img">
+                      <button>
+                        <i class=icon_04></i>
+                        <span class=nonselect>바이애슬론</span>
+                      </button>
+                    </li>
                 </ul> <!-- // #skiimgBox -->
 
                 <h3 class="hidden">크로스컨트리 및 바이애슬론 설명</h3>
                 <ul id="ski_content_box">
                     <li class="crossski_content select">
-                      <!-- <div> -->
                         <div class="cross_info_img">
                           <img src="../../img/ski_info/cross_ski.jpg" alt="크로스 컨트리 스키에 대한 설명">
                         </div>
-                      <!-- </div> -->
                     </li>
                     <li class="baislonski_content">
-                      <!-- <div> -->
                         <div class="baislon_info_img">
                           <img src="../../img/ski_info/baislon_ski.jpg" alt="바이애슬론에 대한 설명">
                         </div>
-                      <!-- </div> -->
                     </li>
                     <li class="skimovieBox">
                       <div class="skimedia_player">
                         <button type="button" class="play_btn view">
                           <i class="fa fa-play" aria-hidden="true"></i>
+                          <span class="hidden">동영상 재생 버튼
+                          </span>
                         </button>
                         <button type="button" class="stop_btn">
                           <i class="fa fa-pause" aria-hidden="true"></i>
+                          <span class="hidden">동영상 일시정지 버튼</span>
                         </button>
                         <video preload poster="../../img/ski_info/medis_fist.png">
-                         <!--  <video src="../../media/Events of the PyeongChang 2018 Paralympic Winter Games.mp4"> -->
+                         <!--  <source> 는 jQuery 에서 확인 -->
                           <p>본 브라우저는 비디오가 올바르게 동작하지 않습니다. <br />
                             새로운 브라우저를 설치하시고 감사해주세요.
                             <a href="http://google.com/chrome">크롬브라우저 설치하기</a>
                           </p>
+                          <span class="hidden">스크 관련 영상</span>
                         </video>
                       </div>
-                    <!--   <div class="media_btn">
-                        <button type="button" class="play"><i class="fa fa-play" aria-hidden="true"></i>play</button>
-                        <button type="button" class="pause"><i class="fa fa-pause" aria-hidden="true"></i>pause</button>
-                        <button type="button" class="prev"><i class="fa fa-backward" aria-hidden="true"></i>prev</button>
-                        <button type="button" class="next"><i class="fa fa-forward" aria-hidden="true"></i>next</button>
-                      </div> -->
                     </li>
                 </ul><!-- // #ski_content_box -->
             </div> <!-- // .ski_info_box -->
@@ -697,31 +711,52 @@
             <h2 class="hidden">커뮤니티</h2>
             <div class="sm_title_box clearfix">
                 <div class="title"><h3>공지사항</h3></div>
-                <div class="scroll_arrow"><button type="button">
-                  <i class="fa fa-sort-asc" aria-hidden="true"></i></button>
+                <div class="scroll_arrow">
+                  <button type="button" class="notice_btn">
+                    <i class="fa fa-sort-asc" aria-hidden="true"></i>
+                    <span class="hidden">공지사항 목록 숨김 및 보이기 버튼</span>
+                  </button>
                 </div>
-                <div class="line"></div>
+                <span class="line"></span>
             </div>
             <div id="noticeContent">
                 <ul class="clearfix">
-                    <li>대한장애인노르딕스키연맹<br />
-                        정규직 채용시험 공고</li>
-                    <li>대한장애인노르딕스키연맹<br />
-                        정규직 채용시험 공고</li>
-                    <li class="last">대한장애인노르딕스키연맹<br />
-                        정규직 채용시험 공고</li>
-                    <li>연맹 행정 직원을 모집합니다.</li>
-                    <li>2017 장애인 설상스포츠<br />
+                    <li>
+                      <a href="#">대한장애인노르딕스키연맹<br />
+                        정규직 채용시험 공고</a>
+                    </li>
+                    <li>
+                      <a href="#">대한장애인노르딕스키연맹<br />
+                        정규직 채용시험 공고</a>
+                    </li>
+                    <li class="last">
+                      <a href="#">대한장애인노르딕스키연맹<br />
+                        정규직 채용시험 공고</a>
+                    </li>
+                    <li>
+                      <a href="#">연맹 행정 직원을 모집합니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">2017 장애인 설상스포츠<br />
                         국제등급분류사 양성 세미나<br />
-                        개최 안내</li>
-                    <li class="last">17-18시즌 노르딕스키<br />
-                        국가대표 평가전 알림</li>
-                    <li>입찰 재공고</li>
-                    <li>2017년 장애인 노르딕스키<br />
+                        개최 안내</a>
+                    </li>
+                    <li class="last">
+                      <a href="#">17-18시즌 노르딕스키<br />
+                        국가대표 평가전 알림</a>
+                    </li>
+                    <li>
+                      <a href="#">입찰 재공고</a>
+                    </li>
+                    <li>
+                      <a href="#">2017년 장애인 노르딕스키<br />
                         국가대표 지도자 및 선수<br />
-                        선발 공고</li>
-                    <li class="last">대한장애인노르딕스키연맹<br />
-                        제2대 회장선거 당선인 공고</li>
+                        선발 공고</a>
+                    </li>
+                    <li class="last">
+                      <a href="#">대한장애인노르딕스키연맹<br />
+                        제2대 회장선거 당선인 공고</a>
+                    </li>
                 </ul>
             </div>
         </article> <!-- // #noticeBox  -->
@@ -731,10 +766,13 @@
         <article id="mediaBox" class="site">
             <div class="sm_title_box clearfix">
                 <div class="title"><h3>미디어</h3></div>
-                <div class="scroll_arrow"><button type="button">
-                  <i class="fa fa-sort-asc" aria-hidden="true"></i></button>
+                <div class="scroll_arrow">
+                  <button type="button" class="media_btn">
+                    <i class="fa fa-sort-asc" aria-hidden="true"></i>
+                    <span class="hidden">미디어 목록 숨김 및 보이기 버튼</span>
+                  </button>
                 </div>
-                <div class="line"></div>
+                <span class="line"></span>
             </div>
             <h4 class="hidden">photo</h4>
             <div id="photoBox">
@@ -786,14 +824,17 @@
         <footer id="footBox" class="clearfix">
             <h2 class="hidden">footerBox</h2>
             <div id="footLogoBox"><a href="#"></a></div>
-            <address id="addressBox">단체명 : 대한장애인노르딕스키연맹주소 : 서울시 송파구 백제고분로 501 청호빌딩 1007호</address>
-            <div id="infoBox">TEL : 070-8711-0336FAX : 070-8711-0335 E-mail : nordicskiing@koreanpc.kr <br />
-Copyright © 2017 KNSFD All right reserved.</div>
-             <div id="moonhawBtn"></div>
-            <div id="daehanBtn"></div>
-            <div id="kspoBtn"></div>
+            <address id="addressBox">
+              <p>단체명 : 대한장애인노르딕스키연맹주소 : 서울시 송파구 백제고분로 501 청호빌딩 1007호</p>
+              <p>TEL : 070-8711-0336FAX : 070-8711-0335 E-mail : nordicskiing@koreanpc.kr </p>
+              <p>© 2017 KNSFD All right reserved.</p>
+            </address>
+            <ul class="foot_btn">
+              <li id="moonhawBtn"><a href="#"></a></li>
+              <li id="daehanBtn"><a href="#"></a></li>
+              <li id="kspoBtn"><a href="#"></a></div>
+            </ul>
         </footer> <!-- // #footBox  -->
-
     </div>
 
       <!-- script -->
@@ -801,30 +842,6 @@ Copyright © 2017 KNSFD All right reserved.</div>
       <script src="../../js/js_base/jquery-ui.js"></script>
       <script src="../../js/js_src/ski_01.js"></script>
       <!-- // script -->
-    <!-- <script>
-      (function($) {
-        var rule = $('.rulengroupBox').find('dl');
-        var ruleBtn = rule.children('dt');
-        ruleBtn.on('click', function(e) {
-          e.preventDefault();
-
-          var _this = $(this);
-          
-          
-
-          var hasActive = _this.hasClass('activeOther');
-          if(hasActive){
-            _this.removeClass('activeOther');
-            _this.addClass('active');
-            _this.siblings('dt').removeClass('active');
-            _this.siblings('dt').addClass('activeOther');
-          } else{
-            _this.addClass('active');
-            _this.siblings('dt').addClass('activeOther');
-          }
-        })
-      })(this.jQuery);
-    </script> -->
 
 </body>
 </html>

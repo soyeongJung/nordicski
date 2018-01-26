@@ -61,6 +61,16 @@
             bannerUl.css({marginLeft:'-100%'});
         });
        }); // rightBtn 클릭
+// .list_box
+var indiBanner = $('.list_box').find('li');
+indiBanner.first().find('a').focus();
+
+indiBanner.find('a').on('focus',function() {
+  console.log( $(this).parent().index() );
+
+  var i = $(this).parent().index();
+  bannerUl.animate({marginLeft:-(i*100)+'%'});
+});
 
 //  #indicator scroll
        var indicatorBtn = $('#indicatorBox');
@@ -104,9 +114,11 @@
   var titleBox = $('.sm_title_box');
   // var title = titleBox.children('.title');
   var hideArrow = titleBox.children('.scroll_arrow');
-  var hideBtn = hideArrow.children('button');
+  var yearHideBtn = hideArrow.children('.year_btn');
+  var noticeHideBtn = hideArrow.children('.notice_btn');
+  var mediaHideBtn = hideArrow.children('.media_btn');
 
-   var btnChange = hideBtn.on('click',function(e){
+   var yearBtnChange = yearHideBtn.on('click',function(e){
     e.preventDefault();
     $('#yearsBox').slideToggle();
    var _thisI = $(this).find('i');
@@ -121,7 +133,7 @@
     }
   });
 
-   var btnChange = hideBtn.on('click',function(e){
+   var noticeBtnChange = noticeHideBtn.on('click',function(e){
     e.preventDefault();
     $('#noticeContent').slideToggle();
    var _thisI = $(this).find('i');
@@ -136,7 +148,7 @@
     }
   });
 
-     var btnChange = hideBtn.on('click',function(e){
+     var mediaBtnChange = mediaHideBtn.on('click',function(e){
     e.preventDefault();
     $('#photoBox').slideToggle();
    var _thisI = $(this).find('i');
@@ -249,9 +261,11 @@
 // #skiinfoBox
   var skiimgBox = $('#skiimgBox');
   var skiimgBoxLi = skiimgBox.children('li');
+  var skiimgBoxSpan = skiimgBoxLi.find('span');
 
   var skiContentBox = $('#ski_content_box');
   var skiContentBoxLi = skiContentBox.children('li');
+
 
   skiimgBoxLi.on('click', function(evt){
     evt.preventDefault();
@@ -261,6 +275,13 @@
     skiimgBoxLi.eq(skiimageIndex).addClass('select');
     skiContentBoxLi.removeClass('select');
     skiContentBoxLi.eq(skiimageIndex).addClass('select');
+
+    var skiimgBoxSpanIndex = $(this).index();
+    skiimgBoxSpan.addClass('nonselect');
+    skiimgBoxSpan.eq(skiimgBoxSpanIndex).removeClass('nonselect');
+
+    // });
+
   });
 
     

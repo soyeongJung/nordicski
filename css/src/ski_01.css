@@ -1,34 +1,6 @@
 /* ski_index_01_20171128.css */
 @charset "utf-8";
 
-/* reset.css */
-/*html, body{margin:0; padding:0; color:#333;}
-h1,h2,h3,h4,h5,h6,
-p,pre,div{margin:0; padding:0;}
-ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style:none;}
-a{text-decoration:none; color:#333;}
-a:hover{text-decoration:underline; font-weight:bold;color:#a0a;}
-img{border:0;}
-
-header, section, footer, aside, article, nav, main, figure{display:block;}
-
-button{cursor:pointer;}*/
-
-/* commen.css */
-/*.clearfix:after{content:" "; display:block; clear:both;}
-.clearfix::after{content:" "; display:block; clear:both;}
-
-.hidden{width:0; height:0; overflow:hidden;}
-
-#wrap .last{margin-right:0; border-right:0;}
-#wrap .first{margin-left:0; border-left:0;}*/
-
-
-
-/* accessibility.css */
-/*a:focus button:focus{outline:3px solid #68a;}*/
-
-
 /* design.css */
 html{width: 100%; height: 100%;}
 body{width: 100%; height:100%;background-color:#ddd; margin:0 auto;}
@@ -42,14 +14,14 @@ body{width: 100%; height:100%;background-color:#ddd; margin:0 auto;}
 .sm_title_box>.title{width:190px; height:60px; text-align:left; line-height:60px; float:left; margin-left:30px;} 
 .sm_title_box>.title>h3{width:100%; height:100%;}
 .sm_title_box>.scroll_arrow{width:35px; height:35px; float:right; margin-top:30px;
-    font-size:3rem; text-align: center;
-    line-height: 3rem; }
+    font-size:3rem; font-size:48px; text-align: center;
+    line-height: 3rem; line-height: 48px; }
 .scroll_arrow>button{width:100%; height:100%;}
 .scroll_arrow>button>i{vertical-align:top; }
-.sm_title_box>.line{width:940px; height:0; border-bottom:5px solid #333; margin-top:10px; margin-bottom:10px ;float:left;}
+.sm_title_box>.line{display:block; width:940px; height:0; border-bottom:5px solid #333; margin-top:10px; margin-bottom:10px ;float:left;}
 
-/* #header */
-#headBox{width:100%; height:auto; background-color:#fff; padding:15px; box-sizing:border-box; margin:0 auto; position:absolute; bottom:0; z-index: 100; box-shadow:1px 1px 0.5rem #ccc;}
+/* #headBox */
+#headBox{width:100%; height:auto; background-color:#fff; padding:15px; box-sizing:border-box; margin:0 auto; position:absolute; bottom:0; z-index: 200; box-shadow:1px 1px 0.5rem #ccc; box-shadow:1px 1px 8px #ccc;}
 
 #headBox.fixed{position:fixed; top:0; bottom:auto;}
 #headBox:after{content:" "; display:block; clear:both;}
@@ -64,47 +36,66 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 #gnb>ul{width:100%; height:100%;}
 #gnb>ul>li{width:100px; height:100%; float:left; margin-right:110px; text-align:center; line-height:60px;font-size:16px;}
 #gnb>ul>li>a{width:100%; height:100%; display:block;}
-/* // #header */
+/* // #headBox */
 
 /* #bannerBox */
 #bannerBox{width:100%; height:650px; position:relative;}
 .banner_box{width:100%; height:100%; }
 .banner_box>ul{width:300%; height:100%;}
 .banner_box>ul>li{width:33.333333%; height:100%; float:left; text-align:center; 
-    line-height:500px; font-size:3rem;}
-    .banner_box>ul>.inbanner_01{background-image:url(../../5page_design/banner/banner_img1.jpg); background-repeat: no-repeat; background-size:100%;}
-    .banner_box>ul>.inbanner_02{background-image:url(../../5page_design/banner/banner_img2.jpg); background-repeat: no-repeat; background-size:100%;}
-    .banner_box>ul>.inbanner_03{background-image:url(../../5page_design/banner/banner_img3.jpg); background-repeat: no-repeat; background-size:100%;}
+    line-height:500px; font-size:3rem; font-size:48px;}
+    .banner_box>ul>.inbanner_01{background-image:url(../../5page_design/banner/banner_img1.jpg); background-repeat: no-repeat; 
+        -webkit- background-size:100%;
+        -moz-    background-size:100%;
+        -ms-     background-size:100%;
+        -o-      background-size:100%;
+                 background-size:100%;}
+    .banner_box>ul>.inbanner_02{background-image:url(../../5page_design/banner/banner_img2.jpg); background-repeat: no-repeat;
+        -webkit- background-size:100%;
+        -moz-    background-size:100%;
+        -ms-     background-size:100%;
+        -o-      background-size:100%;
+                 background-size:100%;}
+    .banner_box>ul>.inbanner_03{background-image:url(../../5page_design/banner/banner_img3.jpg); background-repeat: no-repeat;
+        -webkit- background-size:100%;
+        -moz-    background-size:100%;
+        -ms-     background-size:100%;
+        -o-      background-size:100%;
+                 background-size:100%;}
 .btn{width:100%; height:0;background-color:#fff; position:absolute; top:50%; margin-top:-35px;}
-.btn>.btn_l{width:70px; height:70px; float:left;font-size:3rem;background-color:transparent;}
+.btn>.btn_l{width:70px; height:70px; float:left;font-size:3rem;font-size:48px; background-color:transparent;}
 .btn>.btn_l:hover{color:#fff;}
-.btn>.btn_r{width:70px; height:70px; float:right;font-size:3rem;background-color:transparent;}
+.btn>.btn_r{width:70px; height:70px; float:right;font-size:3rem;font-size:48px; background-color:transparent;}
 .btn>.btn_r:hover{color:#fff;}
-.list_box{width: 150px; height:20px; float:left; position:absolute; right:0; bottom:0; margin-bottom:50px; margin-right:10px;}
+.list_box{width: 150px; height:20px; float:left; position:absolute; right:0; bottom:0; margin-bottom:50px; margin-right:150px;}
 .list_box>li{width:30px; height:30px; background-color:#ccc; float:left; margin-right:30px; border-radius: 50%;}
+.list_box>li>a{display:block; width:100%; height:100%;}
+.list_box>li>a:hover{background-color:#555;border-radius: 50%;}
+.list_box>li>a:focus{background-color:#555;border-radius: 50%;}
 
 .scroll_btn{width: 80px; height:80px; background-color:transparent; float:left; position:absolute; left:50%; top:50%; margin-left:-40px; margin-top:220px;}
-.scroll_down{width: 100%; height: 100%;background-color:transparent; font-size:3rem;}
+.scroll_down{width: 100%; height: 100%;background-color:transparent; font-size:3rem; font-size:48px;}
 .scroll_down:hover{color:#fff;}
 .scroll_text{display:block; width:72px; height:23px; margin:0 auto; font-size:12px;}
-
 /* // #bannerBox */
 
-/* indicator */
+/* #indicatorBox */
 #indicatorBox{width:34px; height:auto; margin-bottom:10px; position:fixed;left:50%;
-     margin-left:33rem; top: 12rem;}
+     margin-left:33rem; margin-left:528px; top: 12rem; top: 192px;}
 #indicatorBox>.indicator_list_box{width:20px; height:150px; }
 .indicator_list_box>li{width:34px; height:34px; background-color:#ccc; 
     margin-bottom:50px; border-radius: 50%}
 .indicator_list_box>li>button{width:100%; height:100%; background-color: transparent;}
+.indicator_list_box>li>button:hover,
+.indicator_list_box>li>button:focus{width:100%; height:100%; border-radius: 50%; background-color:#555;}
+
 #indicatorBox, #indicatorBox+.btn_top{display: none;}
 
 /* #introduceBox */
 #introduceBox{width:960px; height:auto; background-color:#fff; margin:0 auto; 
     box-sizing:border-box;}
 
-/*#introduceBox{width:960px; height:auto; margin:0 auto;}*/
-
+/* #historyBox */
 #historyBox{width:100%; height:auto;  margin:120px 0;}
 #yearsBox{width:940px; height:auto;margin:120px 0;}
 
@@ -130,19 +121,20 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 .rulengroupBox>dl>dt:last-of-type{float: right;}
 .rulengroupBox>dl>dt>button{width:100%; height:100%;}
 .rulengroupBox>dl>dt>button>span{margin:0 auto; width:82px; height:40px; color:#fff; text-align: center; 
-    font-size:1.875rem; font-weight: bold;}
-.rule_box>button:hover>span{color:#eb1646;}
-.group_box>button:hover>span{color:#3b4e6c;}
-/*.rulengroupBox>dl>dd{display:none; width:0; height:100%; overflow-x:hidden;}*/
+    font-size:1.875rem; font-size:30px; font-weight: bold;}
+/*.rule_box>button:hover>span{color:#eb1646;}*/
+/*.group_box>button:hover>span{color:#3b4e6c;}*/
 .rulengroupBox>dl>dd{display:none;width:700px; height:100%; background-color:#fff; padding:60px 30px; box-sizing: border-box;float:left;}
 
-.icon_01{width:140px; height:152px; background-image:url(../../5page_design/icon/rule_icon.svg); background-repeat: no-repeat;background-size:contain; display:block; margin:0 auto; margin-bottom:74px;}
+.icon_01{width:140px; height:152px; background-image:url(../../5page_design/icon/rule_icon.svg); background-repeat: no-repeat;background-size:contain; display:block; margin:0 auto; margin-bottom:74px; }
+button:hover>i.icon_01{transform: scale(2, 2);}
 .rule_box>button{background-color:#eb1646;}
 .rule_content_box{display:none; width:0; height:100%; overflow-x:hidden;}
 
 
 .group_box>button{background-color:#3b4e6c;}
 .icon_02{width:140px; height:152px; background-image:url(../../5page_design/icon/group_icon.svg); background-repeat: no-repeat;background-size:contain;display:block; margin:0 auto; margin-bottom:74px;}
+button:hover>i.icon_02{transform: scale(2, 2);}
 
 /*  --------------------active----------------------- */
 .rulengroupBox dt.active{width: 170px; }
@@ -159,27 +151,25 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
     }
 #skiinfoBox>.ski_info_box{width:960px; height:auto; margin:0 auto;}
 #skiimgBox{width:100%; height:auto; margin:0 auto;}
-#skiimgBox>.crossski_img{width:460px; height:300px; background-image:url(../../img/ski_info/cross_ski_img.png); background-size:contain; background-repeat: no-repeat; float:left; margin-right:20px;}
-#skiimgBox>.baislonski_img{width:460px; height:300px; background-image:url(../../img/ski_info/baislon_ski_img.png); background-size:contain; background-repeat: no-repeat; float:left;}
+#skiimgBox>.crossski_img{width:460px; height:300px; float:left; margin-right:20px;background-color:#3b4e6c;}
+.icon_03{display:block;width:100%; height:100%;background-image:url(../../1x/SVG/cross_w.svg); background-size:50% auto; background-repeat: no-repeat; z-index: 100; background-position: center;}
+#skiimgBox>.baislonski_img{width:460px; height:300px;  float:left;background-color:#3b4e6c;}
+.icon_04{display:block;width:100%; height:100%;background-image:url(../../1x/SVG/biaslon_w.svg); background-size:60% auto; background-repeat: no-repeat; z-index: 100;background-position: center;}
 #skiimgBox>li.select{display: block;}
-
+#skiimgBox>li>button{width:100%; height:100%; background-color:transparent; position:relative; color:#fff;text-align: center; line-height: 500px;}
+#skiimgBox>li>button>span.nonselect{display: block; position:absolute; top:0; left:0; background-color:rgba(85,85,85,0.6); width:100%; height:100%; z-index: 100; color:#fff; text-align: center; line-height: 500px; font-weight: bold;}
+#skiimgBox>li>button>span.nonselect:hover{outline:2px solid #7ad;}
 
 
 #ski_content_box{width:940px; min-height:1140px; height:auto; background-color:#3b4e6c; padding:30px; box-sizing: border-box;}
-.crossski_content{width:880px; height:660px; padding:1rem; box-sizing:border-box; background-color:#fff; overflow-y:scroll; overflow-x:hidden; display:none; }
+.crossski_content{width:880px; height:660px; padding:1rem; padding:16px;box-sizing:border-box; background-color:#fff; overflow-y:scroll; overflow-x:hidden; display:none; }
 
-.baislonski_content{width:880px; height:660px; padding:1rem; box-sizing:border-box; background-color:#fff; display:none;overflow-y:scroll; overflow-x:hidden;}
+.baislonski_content{width:880px; height:660px; padding:1rem; padding:16px; box-sizing:border-box; background-color:#fff; display:none;overflow-y:scroll; overflow-x:hidden;}
 #ski_content_box>li.select{display: block;}
-/*#ski_content_box>li>p{width:100%; height:auto}*/
 
-/*#ski_content_box>li>div>p{width:100%; height:auto;}*/
-#ski_content_box>li>p{width:100%; height:100%; background-color:inherit; overflow-y:scroll; overflow-x:hidden; padding-right:5rem;}
+#ski_content_box>li>div{width:100%; height:auto; overflow-y:scroll; overflow-x:hidden; padding-right:5rem; padding-right:80px;}
+#ski_content_box>li>div>img{width: 100%; height: auto;}
 
-/*.box_02>ul>li:nth-child(6){background-color:#0cc; padding:0.5rem; box-sizing:border-box;}
-.box_02>ul>li:nth-child(6)>span{display:block; width:100%; height:100%; background-color:inherit; overflow-y:scroll; overflow-x:hidden; padding-right:5rem;}
-*/
-.cross_info_img{background-image:url(../../img/ski_info/cross_ski.jpg);background-repeat: no-repeat;background-size:100%;}
-.baislon_info_img{background-image:url(../../img/ski_info/baislon_ski.jpg);background-repeat: no-repeat;background-size:100%;}
 
 .skimovieBox{width:880px; height:auto; margin:60px auto 0;}
 .skimedia_player{width:100%; height:auto; position: relative;}
@@ -190,9 +180,7 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 .stop_btn.view{z-index:100;}
 .play_btn:hover, .stop_btn:hover{background-color: rgba(85,85,85,0);}
 .play_btn:focus, .stop_btn:focus{outline:2px solid #d07; outline-offset: 3px; background-color:rgba(85,85,85,0); color:#333;}
-
 /* // #skiinfoBox */
-
 
 /* #noticeBox */
 #noticeBox{width:100%; height:auto; margin:120px auto; }
@@ -207,8 +195,9 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 #noticeContent>ul>li:nth-of-type(8){margin-bottom: 0;}
 #noticeContent>ul>li:nth-of-type(9){margin-bottom: 0;}
 #noticeContent>ul>li:hover{background-color:#3b4e6c; color:#fff;}
+#noticeContent>ul>li>a{display:block; width:100%; height:100%;color:inherit;}
+#noticeContent>ul>li:hover>a:hover{display:block; width:100%; height:100%;color:#fff;}
 /* // #noticeBox */
-
 
 /* #mediaBox */
 #mediaBox{width:100%; height:auto; margin:0 auto; padding:120px 0;}
@@ -231,22 +220,23 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 #photoBox>ul>li>a>span{display:none; width:100%; height:100%; position: relative;
  z-index: 200;}
 #photoBox>ul>li:hover>a>span{display:block; color:#fff;}
-/*#photoBox>ul>li:hover>a:hover>span{display:block; color:#fff;}*/
 #photoBox>ul>li:focus>a>span{outline:2px solid #d07; outline-offset: 3px; display:block; color:#fff;}
 /* // #mediaBox */
 
 /* .btn_top */
-.btn_top{width:80px; height:80px; width:5rem; height:5rem; background-color:#353535; color:#fff;position: fixed; left:50%; margin-left:31.5rem; bottom:4rem; text-align: center; line-height: 80px;border-radius: 20px;}
-.btn_top>a{width:100%; height:100%; display:block; color:inherit; border-radius: 20px;}
+.btn_top{width:80px; height:80px; width:5rem; height:5rem; background-color:#353535; color:#fff;position: fixed; left:50%; margin-left:31.5rem; margin-left:504px;  bottom:4rem; bottom:64px; text-align: center; line-height: 80px;border-radius: 20px;}
+.btn_top>a{width:100%; height:100%; display:block; color:inherit; border-radius: 20px; text-transform: uppercase;}
 
 /*  #footBox */
-#footBox{width:100%; height:auto; background-color:#555; 
-    margin:0 auto; padding:30px; box-sizing:border-box;}
+#footBox{width:100%; height:auto; background-color:#555; margin:0 auto; padding:30px; box-sizing:border-box;}
 #footLogoBox{width:200px; height:100px; float:left; text-align:center; line-height:100px; margin-right:70px;}
 #footLogoBox>a{display: block; width:100%; height:100%; background-image: url(../../img/footer_image/foot_logo.png); background-size:contain; background-repeat: no-repeat; background-position:center;}
-#addressBox{font-size:0.6875rem;width:630px;height:auto; color:#fff;margin-bottom:5px;float:left;}
-#infoBox{font-size:0.6875rem;width:630px;height:auto; color:#fff; margin-bottom:30px;float:left;line-height: 20px}
+#addressBox{font-size:0.6875rem;width:630px;height:auto; color:#fff;margin-bottom:5px;float:left; line-height: 30px;}
+.foot_btn{width:620px; height:60px; margin:0 auto;}
 #moonhawBtn{width:160px; height:60px; background-image:url(../../img/footer_image/moonhwa.png);background-repeat: no-repeat; background-size:contain;float:left;margin-right:70px;}
+#moonhawBtn>a{width:100%; height:100%; background-color:inherit;}
 #daehanBtn{width:160px; height:60px; background-image:url(../../img/footer_image/daehan.png);background-repeat: no-repeat; background-size:contain;float:left;margin-right:70px;}
+#daehanBtn>a{width:100%; height:100%; background-color:inherit;}
 #kspoBtn{width:160px; height:60px; background-image:url(../../img/footer_image/kspo.png);background-repeat: no-repeat; background-size:contain;float:left;}
+#kspoBtn>a{width:100%; height:100%; background-color:inherit;}
 /* // #footBox */
