@@ -72,9 +72,9 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 .banner_box>ul{width:300%; height:100%;}
 .banner_box>ul>li{width:33.333333%; height:100%; float:left; text-align:center; 
     line-height:500px; font-size:3rem;}
-    .banner_box>ul>.inbanner_01{background-image:url(../../5page_design/banner/banner_img1.jpg); background-repeat: no-repeat; background-size:100%;}
-    .banner_box>ul>.inbanner_02{background-image:url(../../5page_design/banner/banner_img2.jpg); background-repeat: no-repeat; background-size:100%;}
-    .banner_box>ul>.inbanner_03{background-image:url(../../5page_design/banner/banner_img3.jpg); background-repeat: no-repeat; background-size:100%;}
+    .banner_box>ul>.inbanner_01{background-image:url(../../img/banner/banner_img1.jpg); background-repeat: no-repeat; background-size:100%;}
+    .banner_box>ul>.inbanner_02{background-image:url(../../img/banner/banner_img2.jpg); background-repeat: no-repeat; background-size:100%;}
+    .banner_box>ul>.inbanner_03{background-image:url(../../img/banner/banner_img3.jpg); background-repeat: no-repeat; background-size:100%;}
 .btn{width:100%; height:0;background-color:#fff; position:absolute; top:50%; margin-top:-35px;}
 .btn>.btn_l{width:70px; height:70px; float:left;font-size:3rem;background-color:transparent;}
 .btn>.btn_l:hover{color:#fff;}
@@ -136,13 +136,13 @@ h1>a{display: block; width:100%; height:100%; background-image: url(../../img/lo
 /*.rulengroupBox>dl>dd{display:none; width:0; height:100%; overflow-x:hidden;}*/
 .rulengroupBox>dl>dd{display:none;width:700px; height:100%; background-color:#fff; padding:60px 30px; box-sizing: border-box;float:left;}
 
-.icon_01{width:140px; height:152px; background-image:url(../../5page_design/icon/rule_icon.svg); background-repeat: no-repeat;background-size:contain; display:block; margin:0 auto; margin-bottom:74px;}
+.icon_01{width:140px; height:152px; background-image:url(../../img/icon/rule_icon.svg); background-repeat: no-repeat;background-size:contain; display:block; margin:0 auto; margin-bottom:74px;}
 .rule_box>button{background-color:#eb1646;}
 .rule_content_box{display:none; width:0; height:100%; overflow-x:hidden;}
 
 
 .group_box>button{background-color:#3b4e6c;}
-.icon_02{width:140px; height:152px; background-image:url(../../5page_design/icon/group_icon.svg); background-repeat: no-repeat;background-size:contain;display:block; margin:0 auto; margin-bottom:74px;}
+.icon_02{width:140px; height:152px; background-image:url(../../img/icon/group_icon.svg); background-repeat: no-repeat;background-size:contain;display:block; margin:0 auto; margin-bottom:74px;}
 
 /*  --------------------active----------------------- */
 .rulengroupBox dt.active{width: 170px; }
