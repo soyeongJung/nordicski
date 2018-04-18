@@ -62,6 +62,8 @@
         });
        }); // rightBtn 클릭
 // .list_box
+
+
 var indiBanner = $('.list_box').find('li');
 indiBanner.first().find('a').focus();
 
@@ -179,12 +181,6 @@ indiBanner.find('a').on('focus',function() {
 //     btnHide[i].box.slideToggle();
 //   });
 // }
-
-
-
-
-
-
 
 // #skiinfoBox
   var baseUrl = "../../media/";
